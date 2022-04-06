@@ -1,0 +1,57 @@
+$main-color:#4dd6b6;
+.main-login{
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(to right,rgb(243, 239, 239) 50%, $main-color 50%);
+    .login-contain{
+        height: 75vh;
+        width: 80vw;
+        background: linear-gradient(to right bottom, rgba(236,236,236,0.7),rgba(236,236,236,0.4));
+        border-radius: 1rem;
+        margin:2rem auto;
+        box-shadow: 0.5rem 0.5rem 6rem -1rem rgba(58,57,57);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+        .left-side,.right-side{
+            margin: 2rem 2rem;
+            box-shadow: 0.5rem 0.5rem 6rem -1rem rgba(58,57,57);
+            height:80%;
+            width:100%;
+        }
+        .left-side{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            .img-class{
+                height:3.5rem;
+                #img-id{
+                    height:100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }   
+    .right-side{
+        .welcomenote{
+            h3{
+            float: left;
+            margin-left: 15px;
+            color: black;
+            font-size: large;
+            }
+        }
+        .welcomeimg{
+            height: 80%;
+            width: 100%;
+            margin: orem auto;
+            #wel{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+$secondary-color:#26343D;
+
+.mRegister{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    .left-side{
+        flex:0.33;
+        background: $secondary-color;
+        .header{
+            height: 15rem;
+            margin-top: 2rem;
+            #img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        p{
+            color: #fff;
+            padding: 1.8rem 0.8rem;
+            text-align: left;
+            font-size: large;
+        }
+    }
+    .right-side{
+        flex:0.67;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .top-right{
+            float: right;
+            margin-right: 34px;
+            font-weight: 700;
+            #linkSignIn{
+                text-decoration: none;
+                cursor: pointer;
+                color: green;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+        .body-right{
+             height: 100%;
+             width: 100%;
+            .container{
+                height:80%;
+                width: 70%;
+                margin: 2rem auto;
+                box-shadow: 0rem 0rem 2rem 0.1rem #48ea98;
+                border-radius: 0.5rem;
+                .inputGroup{
+                    width: 60%;
+                    position: relative;
+                    h5{
+                        font-size: small;
+                        font-weight: 400;
+                        color: gray;
+                        position: absolute;
+                        left: 7.5rem;
+                        top: 0.5rem;
+                        margin: 0.5rem auto;
+                        background: #fff;
+
+
+                    }
+                    input{
+                        margin: 2rem auto;
+                        width: 100%;
+                        height: 30px;
+                        border: none;
+                        padding-left: 0.5rem 0.5rem;
+                        box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem gray;
+
+                        &:focus{
+                            outline: none;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    
+}
